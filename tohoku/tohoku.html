@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Galaxies @ Sendai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- ナビゲーションバー -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-lg text-slate-900 tracking-wide">
+                    <a href="#">Local Galaxies @ Sendai</a>
+                </div>
+                <!-- デスクトップ用メニュー -->
+                <div class="flex space-x-6 sm:space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 transition">開催概要</a>
+                    <a href="#program" class="text-slate-600 hover:text-blue-600 transition">プログラム</a>
+                    <a href="#access" class="text-slate-600 hover:text-blue-600 transition">アクセス</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-20 sm:py-28 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h1 class="text-3xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight">
+                Local Galaxies Workshop
+            </h1>
+            <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-8 font-light">
+
+            </p>
+            
+            <div class="bg-white/5 border border-white/10 backdrop-blur-sm rounded-xl max-w-xl mx-auto p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+                <div>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Date</p>
+                    <p class="text-sm sm:text-base font-medium mt-1">July 2, 2026</p>
+                </div>
+                <div class="border-t border-white/10 sm:border-t-0 sm:border-l sm:pl-6 pt-4 sm:pt-0">
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Venue</p>
+                    <p class="text-sm sm:text-base font-medium mt-1">Tohoku University</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- 開催概要 -->
+        <section id="about" class="scroll-mt-20">
+            <div class="border-l-4 border-blue-600 pl-4 mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">開催概要</h2>
+            </div>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                近傍銀河の最近の研究成果について理論と観測の両面から議論し、今後の共同研究の可能性について検討する。
+            </p>
+        </section>
+
+        <!-- プログラム -->
+        <section id="program" class="scroll-mt-20">
+            <div class="border-l-4 border-blue-600 pl-4 mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">プログラム / Schedule</h2>
+            </div>
+            
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="bg-slate-900 text-white px-6 py-3 font-semibold text-sm">
+                    July 2, 2026
+                </div>
+                <div class="divide-y divide-slate-100 text-xs sm:text-sm">
+                    
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">10:00 - 10:05</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900">Introductory remarks</div>
+                            <div class="text-xs text-slate-500 mt-1">Masao Mori (U. Tsukuba)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">10:05 - 10:20</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル1</div>
+                            <div class="text-xs text-slate-500 mt-2">名前1</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">10:20 - 10:35</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル2</div>
+                            <div class="text-xs text-slate-500 mt-2">名前2</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">10:35 - 10:50</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル3</div>
+                            <div class="text-xs text-slate-500 mt-2">名前3</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">10:50 - 11:05</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル4</div>
+                            <div class="text-xs text-slate-500 mt-2">名前4</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">11:05 - 11:20</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル5</div>
+                            <div class="text-xs text-slate-500 mt-2">名前5</div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">11:20 - 11:35</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル6</div>
+                            <div class="text-xs text-slate-500 mt-2">名前6</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">11:20 - 11:35</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル7</div>
+                            <div class="text-xs text-slate-500 mt-2">名前7</div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                        <div class="font-mono font-medium text-slate-500 col-span-1">11:35 - 12:50</div>
+                        <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
+                            Lunch Break
+                        </div>
+                    </div>
+
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">12:50 - 13:05</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル8</div>
+                            <div class="text-xs text-slate-500 mt-2">名前8</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">13:05 - 13:20</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル9</div>
+                            <div class="text-xs text-slate-500 mt-2">名前9</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">13:20 - 13:35</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル10</div>
+                            <div class="text-xs text-slate-500 mt-2">名前10</div>
+                        </div>
+                    </div>
+ 
+                    
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">13:35 - 13:50</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル11</div>
+                            <div class="text-xs text-slate-500 mt-2">名前11</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">13:50 - 14:05</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル12</div>
+                            <div class="text-xs text-slate-500 mt-2">名前12</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                        <div class="font-mono font-medium text-slate-500 col-span-1">14:05 - 14:20</div>
+                        <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
+                            Coffee Break
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">14:20 - 14:35</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル13</div>
+                            <div class="text-xs text-slate-500 mt-2">名前13</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">14:35 - 14:50</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル14</div>
+                            <div class="text-xs text-slate-500 mt-2">名前14</div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">14:50 - 15:05</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル15</div>
+                            <div class="text-xs text-slate-500 mt-2">名前15</div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="font-mono font-medium text-blue-600 col-span-1">15:05 - 15:20</div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">タイトル16</div>
+                            <div class="text-xs text-slate-500 mt-2">名前10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス -->
+        <section id="access" class="scroll-mt-20">
+            <div class="border-l-4 border-blue-600 pl-4 mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">会場・アクセス</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="space-y-4 text-slate-600 text-sm sm:text-base bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">東北大学 青葉山北キャンパス</h3>
+                        <p class="text-slate-800 font-medium">合同C棟 2F多目的室 (H-04)</p>
+                        <p class="text-sm mt-1 text-slate-500">Multipurpose Room, 2F, Science Complex C, Aobayama Campus</p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
+                        <a href="https://www.sci.tohoku.ac.jp/campusmap/" target="_blank" class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
+                            📍 キャンパスマップ
+                        </a>
+                        <a href="https://www.sci.tohoku.ac.jp/access/" target="_blank" class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
+                            🚆 アクセス方法
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-xs">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p>© 2026 Local Galaxies Workshop</p>
+        </div>
+    </footer>
+
+</body>
+</html>
