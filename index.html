@@ -23,7 +23,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 font-bold text-base sm:text-lg text-slate-900 tracking-wide min-w-0">
-                    <a href="#" class="truncate block">Local Galaxies @ Sendai</a>
+                    <a href="./" class="truncate block">Local Galaxies @ Sendai</a>
                 </div>
                 <!-- デスクトップ用メニュー -->
                 <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium">
@@ -294,6 +294,22 @@
 
     <script>
         (function () {
+            // 前回のスクロール位置を復元しない（再訪問でページ最下部に飛ぶのを防ぐ）
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            function scrollToTopUnlessHash() {
+                if (!window.location.hash) {
+                    window.scrollTo(0, 0);
+                }
+            }
+            scrollToTopUnlessHash();
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    scrollToTopUnlessHash();
+                }
+            });
+
             var toggle = document.getElementById('nav-toggle');
             var menu = document.getElementById('nav-menu');
             var iconOpen = document.getElementById('nav-icon-open');
