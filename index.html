@@ -5,6 +5,7 @@
 
 
 <!-- ヘッダー　(設定)-->
+
 <head>
     <!-- 文字コード: 日本語を正しく表示するために UTF-8 を指定 -->
     <meta charset="UTF-8">
@@ -39,6 +40,7 @@
 
 <!-- ボディー　(内容) -->
 <!-- bg-slate-50: 薄いグレー背景 / text-slate-800: 本文色 / antialiased: 文字のアンチエイリアス -->
+
 <body class="bg-slate-50 text-slate-800 antialiased">
 
     <!-- ========================================
@@ -66,13 +68,17 @@
 
                 <!-- ハンバーガーボタン（モバイルのみ表示: md:hidden） -->
                 <!-- aria-* 属性: スクリーンリーダー向けのアクセシビリティ情報 -->
-                <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition" aria-expanded="false" aria-controls="nav-menu" aria-label="メニューを開く">
+                <button type="button" id="nav-toggle"
+                    class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
+                    aria-expanded="false" aria-controls="nav-menu" aria-label="メニューを開く">
                     <!-- メニューが閉じているときに表示する「三本線」アイコン -->
-                    <svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     <!-- メニューが開いているときに表示する「×」アイコン（初期状態は hidden） -->
-                    <svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -83,20 +89,24 @@
             <div id="nav-menu" class="hidden md:hidden pb-4 border-t border-slate-100">
                 <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
                     <!-- nav-link クラス: JS でクリック時にメニューを閉じる対象 -->
-                    <a href="#about" class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">開催概要</a>
-                    <a href="#program" class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">プログラム</a>
-                    <a href="#access" class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">アクセス</a>
+                    <a href="#about"
+                        class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">開催概要</a>
+                    <a href="#program"
+                        class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">プログラム</a>
+                    <a href="#access"
+                        class="nav-link px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition">アクセス</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    
+
     <!-- ========================================
          ヒーローセクション（ページ最上部の大きな見出しエリア）
          グラデーション背景 + 日時・会場の概要カード
          ======================================== -->
-    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-20 sm:py-28 text-center relative overflow-hidden">
+    <header
+        class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-20 sm:py-28 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 relative z-10">
             <!-- メインタイトル（ワークショップ名） -->
             <h1 class="text-3xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight">
@@ -109,7 +119,8 @@
 
             <!-- 日時・会場を並べた情報カード -->
             <!-- grid-cols-1 sm:grid-cols-2: モバイルは縦並び、sm 以上は横2列 -->
-            <div class="bg-white/5 border border-white/10 backdrop-blur-sm rounded-xl max-w-xl mx-auto p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+            <div
+                class="bg-white/5 border border-white/10 backdrop-blur-sm rounded-xl max-w-xl mx-auto p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
                 <div>
                     <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Date</p>
                     <p class="text-sm sm:text-base font-medium mt-1">July 3, 2026</p>
@@ -162,7 +173,7 @@
                 <!-- 各プログラム行を divide-y で区切る -->
                 <div class="divide-y divide-slate-100 text-xs sm:text-sm">
 
-                    
+
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">挨拶</p>
@@ -180,7 +191,8 @@
                             <p class="schedule-time font-medium text-blue-600">10:05 - 10:20</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Activity of Supermassive Black Holes and Galactic Collisions</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Activity of Supermassive Black Holes
+                                and Galactic Collisions</div>
                             <div class="text-xs text-slate-500 mt-2">高山暁史 (M2,Tsukuba)</div>
                         </div>
                     </div>
@@ -191,8 +203,9 @@
                             <p class="schedule-time font-medium text-blue-600">10:20 - 10:35</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">近傍銀河における分子雲の進化と星形成</div>
-                            <div class="text-xs text-slate-500 mt-2">小西亜侑 (研究員,Tohoku)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Hydrodynamic interactions in the
+                                collision of satellite galaxies and the Galactic disk</div>
+                            <div class="text-xs text-slate-500 mt-2">相本幹太 (M2,Tsukuba)</div>
                         </div>
                     </div>
 
@@ -202,8 +215,9 @@
                             <p class="schedule-time font-medium text-blue-600">10:35 - 10:50</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Hydrodynamic interactions in the collision of satellite galaxies and the Galactic disk</div>
-                            <div class="text-xs text-slate-500 mt-2">相本幹太 (M2,Tsukuba)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Galaxy Collisions and Stellar
+                                Substructures in the Andromeda Galaxy: Past and Future</div>
+                            <div class="text-xs text-slate-500 mt-2">山口未沙 (D2,Tsukuba)</div>
                         </div>
                     </div>
 
@@ -213,18 +227,28 @@
                             <p class="schedule-time font-medium text-blue-600">10:50 - 11:05</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Galaxy Collisions and Stellar Substructures in the Andromeda Galaxy: Past and Future</div>
-                            <div class="text-xs text-slate-500 mt-2">山口未沙 (D2,Tsukuba)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">深層学習を用いたサブ構造分類に基づく銀河系形成史</div>
+                            <div class="text-xs text-slate-500 mt-2">田熊修士 (M1,Tohoku)</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                        <div class="col-span-1">
+                            <p class="schedule-time font-medium text-slate-500">11:05 - 11:15</p>
+                        </div>
+                        <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
+                            Coffee Break
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演5</p>
-                            <p class="schedule-time font-medium text-blue-600">11:05 - 11:20</p>
+                            <p class="schedule-time font-medium text-blue-600">11:15 - 11:30</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">The dynamics of the most metal-poor stellar stream in our Galaxy</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">The dynamics of the most metal-poor
+                                stellar stream in our Galaxy</div>
                             <div class="text-xs text-slate-500 mt-2">Heidi de Vos (M1,Tohoku)</div>
                         </div>
                     </div>
@@ -232,10 +256,11 @@
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演6</p>
-                            <p class="schedule-time font-medium text-blue-600">11:20 - 11:35</p>
+                            <p class="schedule-time font-medium text-blue-600">11:30 - 11:45</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">The Milky Way Tomography with Subaru Hyper Suprime-Cam: From Ancient Building Blocks to the Present Day</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">The Milky Way Tomography with Subaru
+                                Hyper Suprime-Cam: From Ancient Building Blocks to the Present Day</div>
                             <div class="text-xs text-slate-500 mt-2">鈴木善久 (研究員,国立天文台)</div>
                         </div>
                     </div>
@@ -243,7 +268,19 @@
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演7</p>
-                            <p class="schedule-time font-medium text-blue-600">11:20 - 11:35</p>
+                            <p class="schedule-time font-medium text-blue-600">11:45 - 12:00</p>
+                        </div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">Identifying Mono-Enriched Candidates
+                                among Extremely Metal-Poor Stars from Chemical Abundance</div>
+                            <div class="text-xs text-slate-500 mt-2">石川諒 (D2,Tohoku)</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="col-span-1">
+                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演8</p>
+                            <p class="schedule-time font-medium text-blue-600">12:00 - 12:15</p>
                         </div>
                         <div class="col-span-3">
                             <div class="font-bold text-slate-900 leading-relaxed">Galactic Archaeology with Subaru</div>
@@ -251,9 +288,10 @@
                         </div>
                     </div>
 
+
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
                         <div class="col-span-1">
-                            <p class="schedule-time font-medium text-slate-500">11:35 - 12:50</p>
+                            <p class="schedule-time font-medium text-slate-500">12:15 - 13:30</p>
                         </div>
                         <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
                             Lunch Break
@@ -262,62 +300,55 @@
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
-                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演8</p>
-                            <p class="schedule-time font-medium text-blue-600">12:50 - 13:05</p>
-                        </div>
-                        <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">深層学習を用いたサブ構造分類に基づく銀河系形成史</div>
-                            <div class="text-xs text-slate-500 mt-2">田熊修士 (M1,Tohoku)</div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
-                        <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演9</p>
-                            <p class="schedule-time font-medium text-blue-600">13:05 - 13:20</p>
+                            <p class="schedule-time font-medium text-blue-600">13:30 - 13:45</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Identifying Mono-Enriched Candidates among Extremely Metal-Poor Stars from Chemical Abundance</div>
-                            <div class="text-xs text-slate-500 mt-2">石川諒 (D2,Tohoku)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">近傍銀河における分子雲の進化と星形成</div>
+                            <div class="text-xs text-slate-500 mt-2">小西亜侑 (研究員,Tohoku)</div>
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演10</p>
-                            <p class="schedule-time font-medium text-blue-600">13:20 - 13:35</p>
+                            <p class="schedule-time font-medium text-blue-600">13:45 - 14:00</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Performance verification of entropy switches in the Godunov Density-Independent Smoothed Particle Hydrodynamics method</div>
-                            <div class="text-xs text-slate-500 mt-2">高橋良朋 (M2,Tsukuba)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Physical processes of high-redshift
+                                galactic outflows detected by JWST and galaxy formation</div>
+                            <div class="text-xs text-slate-500 mt-2">有馬鞠杏 (M1,Tsukuba)</div>
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演11</p>
-                            <p class="schedule-time font-medium text-blue-600">13:35 - 13:50</p>
+                            <p class="schedule-time font-medium text-blue-600">14:00 - 14:15</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Towards a Hybrid N-body Scheme for Strong Gravitational Scattering and Collisionless Dynamics</div>
-                            <div class="text-xs text-slate-500 mt-2">野村泰成 (M1,Tsukuba)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Mass-Concentration Relation and
+                                Triaxial Structure of Massive Dark Matter Halos</div>
+                            <div class="text-xs text-slate-500 mt-2">小田 (M2,Tsukuba)</div>
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演12</p>
-                            <p class="schedule-time font-medium text-blue-600">13:50 - 14:05</p>
+                            <p class="schedule-time font-medium text-blue-600">14:15 - 14:30</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Dwarf Galaxy Internal Kinematics as a Probe of Fuzzy Dark Matter</div>
-                            <div class="text-xs text-slate-500 mt-2">Dafa Wardana (研究員,Tohoku)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Energy Conversion Efficiency of the
+                                Cusp-Core Transition driven by
+                                Supernova Feedback in Dark Matter Haloes</div>
+                            <div class="text-xs text-slate-500 mt-2">篠﨑倫 (M2,Tsukuba)</div>
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
                         <div class="col-span-1">
-                            <p class="schedule-time font-medium text-slate-500">14:05 - 14:20</p>
+                            <p class="schedule-time font-medium text-slate-500">14:30 - 14:45</p>
                         </div>
                         <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
                             Coffee Break
@@ -327,60 +358,66 @@
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演13</p>
-                            <p class="schedule-time font-medium text-blue-600">14:20 - 14:35</p>
+                            <p class="schedule-time font-medium text-blue-600">14:45 - 15:00</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Physical processes of high-redshift galactic outflows detected by JWST and galaxy formation</div>
-                            <div class="text-xs text-slate-500 mt-2">有馬鞠杏 (M1,Tsukuba)</div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
-                        <div class="col-span-1">
-                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演14</p>
-                            <p class="schedule-time font-medium text-blue-600">14:35 - 14:50</p>
-                        </div>
-                        <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">タイトル14</div>
-                            <div class="text-xs text-slate-500 mt-2">小田 (M2,Tsukuba)</div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
-                        <div class="col-span-1">
-                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演15</p>
-                            <p class="schedule-time font-medium text-blue-600">14:50 - 15:05</p>
-                        </div>
-                        <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">Orbit-based Dynamical Modeling with Machine Learning: Testing a Bayesian Framework for Constraining Dark Matter Halo Density Profiles in Dwarf Galaxies</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Orbit-based Dynamical Modeling with
+                                Machine Learning: Testing a Bayesian Framework for Constraining Dark Matter Halo Density
+                                Profiles in Dwarf Galaxies</div>
                             <div class="text-xs text-slate-500 mt-2">宮﨑凜 (M2,Tohoku)</div>
                         </div>
                     </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
-                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演16</p>
-                            <p class="schedule-time font-medium text-blue-600">15:05 - 15:20</p>
+                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演14</p>
+                            <p class="schedule-time font-medium text-blue-600">15:00 - 15:15</p>
                         </div>
                         <div class="col-span-3">
-                            <div class="font-bold text-slate-900 leading-relaxed">ダークマターハローのカスプコア遷移における臨界質量とエネルギー変換効率</div>
-                            <div class="text-xs text-slate-500 mt-2">篠﨑倫 (M2,Tsukuba)</div>
+                            <div class="font-bold text-slate-900 leading-relaxed">Dwarf Galaxy Internal Kinematics as a
+                                Probe of Fuzzy Dark Matter</div>
+                            <div class="text-xs text-slate-500 mt-2">Dafa Wardana (研究員,Tohoku)</div>
                         </div>
                     </div>
-                    
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="col-span-1">
+                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演15</p>
+                            <p class="schedule-time font-medium text-blue-600">15:15 - 15:30</p>
+                        </div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">Performance verification of entropy
+                                switches in the Godunov Density-Independent Smoothed Particle Hydrodynamics method</div>
+                            <div class="text-xs text-slate-500 mt-2">高橋良朋 (M2,Tsukuba)</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
+                        <div class="col-span-1">
+                            <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演16</p>
+                            <p class="schedule-time font-medium text-blue-600">15:30 - 15:45</p>
+                        </div>
+                        <div class="col-span-3">
+                            <div class="font-bold text-slate-900 leading-relaxed">Towards a Hybrid N-body Scheme for
+                                Strong
+                                Gravitational Scattering and Collisionless Dynamics</div>
+                            <div class="text-xs text-slate-500 mt-2">野村泰成 (M1,Tsukuba)</div>
+                        </div>
+                    </div>
+
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
                             <p class="schedule-label text-xs text-slate-500 font-medium mb-1">講演17</p>
-                            <p class="schedule-time font-medium text-blue-600">15:20 - 15:35</p>
+                            <p class="schedule-time font-medium text-blue-600">15:45 - 16:00</p>
                         </div>
                         <div class="col-span-3">
                             <div class="font-bold text-slate-900 leading-relaxed">TBA</div>
                             <div class="text-xs text-slate-500 mt-2">Horigome Shunichi (研究員,Tohoku)</div>
                         </div>
                     </div>
-                
 
-                
+
+
                     <!-- 公開中の表示: 開始・終了時刻のみ 
                     <div class="p-6 text-slate-700 text-sm sm:text-base space-y-1">
                         <p>開始時刻：10:00</p>
@@ -388,11 +425,11 @@
                     </div>
                     -->
 
-                    
+
                 </div>
             </div>
         </section>
- 
+
 
         <!-- ========================================
              会場・アクセスセクション
@@ -403,17 +440,21 @@
             </div>
             <div class="grid grid-cols-1 gap-6">
                 <!-- 会場情報カード -->
-                <div class="space-y-4 text-slate-600 text-sm sm:text-base bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <div
+                    class="space-y-4 text-slate-600 text-sm sm:text-base bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                     <div>
                         <h3 class="font-bold text-slate-900 text-lg mb-2">東北大学 青葉山北キャンパス</h3>
                         <p class="text-slate-800 font-medium">青葉サイエンスホール</p>
                     </div>
                     <!-- 外部リンク（新しいタブで開く: target="_blank"） -->
-                    <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
-                        <a href="https://www.sci.tohoku.ac.jp/campusmap/" target="_blank" class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
+                    <div
+                        class="border-t border-slate-200 pt-4 mt-4 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
+                        <a href="https://www.sci.tohoku.ac.jp/campusmap/" target="_blank"
+                            class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
                             📍 キャンパスマップ
                         </a>
-                        <a href="https://www.sci.tohoku.ac.jp/access/" target="_blank" class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
+                        <a href="https://www.sci.tohoku.ac.jp/access/" target="_blank"
+                            class="inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-4 rounded-lg transition text-sm">
                             🚆 アクセス方法
                         </a>
                     </div>
@@ -491,4 +532,5 @@
         })();
     </script>
 </body>
+
 </html>
