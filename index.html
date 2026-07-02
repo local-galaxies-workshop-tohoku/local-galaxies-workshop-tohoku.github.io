@@ -34,6 +34,12 @@
         .schedule-time {
             font-family: 'Noto Sans JP', sans-serif;
         }
+
+        /* Coffee / Lunch Break：上下に黒線（divide-y との競合を避ける） */
+        .schedule-break {
+            border-top: 0.5px solid #0f172a !important;
+            border-bottom: 0.5px solid #0f172a !important;
+        }
     </style>
 </head>
 
@@ -173,6 +179,14 @@
                 <!-- 各プログラム行を divide-y で区切る -->
                 <div class="divide-y divide-slate-100 text-xs sm:text-sm">
 
+                    <!-- 第1セクション -->
+                    <div class="divide-y divide-slate-100">
+                    <div class="px-4 sm:px-6 py-3 bg-blue-50">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
+                            <span class="font-semibold text-blue-900 text-sm">第1セクション</span>
+                            <span class="text-blue-700 text-xs sm:text-sm">座長: 篠崎倫 </span>
+                        </div>
+                    </div>
 
                     <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 hover:bg-slate-50 transition">
                         <div class="col-span-1">
@@ -232,12 +246,23 @@
                         </div>
                     </div>
 
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                    </div>
+
+                    <div class="schedule-break p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
                         <div class="col-span-1">
                             <p class="schedule-time font-medium text-slate-500">11:05 - 11:15</p>
                         </div>
                         <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
                             Coffee Break
+                        </div>
+                    </div>
+
+                    <!-- 第2セクション -->
+                    <div class="divide-y divide-slate-100">
+                    <div class="px-4 sm:px-6 py-3 bg-blue-50">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
+                            <span class="font-semibold text-blue-900 text-sm">第2セクション</span>
+                            <span class="text-blue-700 text-xs sm:text-sm">座長: 堀米 俊一</span>
                         </div>
                     </div>
 
@@ -288,13 +313,23 @@
                         </div>
                     </div>
 
+                    </div>
 
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                    <div class="schedule-break p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
                         <div class="col-span-1">
                             <p class="schedule-time font-medium text-slate-500">12:15 - 13:30</p>
                         </div>
                         <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
                             Lunch Break
+                        </div>
+                    </div>
+
+                    <!-- 第3セクション -->
+                    <div class="divide-y divide-slate-100">
+                    <div class="px-4 sm:px-6 py-3 bg-blue-50">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
+                            <span class="font-semibold text-blue-900 text-sm">第3セクション</span>
+                            <span class="text-blue-700 text-xs sm:text-sm">座長: 山口未沙</span>
                         </div>
                     </div>
 
@@ -346,12 +381,23 @@
                         </div>
                     </div>
 
-                    <div class="p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
+                    </div>
+
+                    <div class="schedule-break p-4 sm:p-6 grid grid-cols-4 gap-4 bg-slate-100">
                         <div class="col-span-1">
                             <p class="schedule-time font-medium text-slate-500">14:30 - 14:45</p>
                         </div>
                         <div class="col-span-3 text-slate-600 italic font-medium flex items-center">
                             Coffee Break
+                        </div>
+                    </div>
+
+                    <!-- 第4セクション -->
+                    <div class="divide-y divide-slate-100">
+                    <div class="px-4 sm:px-6 py-3 bg-blue-50">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
+                            <span class="font-semibold text-blue-900 text-sm">第4セクション</span>
+                            <span class="text-blue-700 text-xs sm:text-sm">座長: 小西亜侑</span>
                         </div>
                     </div>
 
@@ -426,6 +472,8 @@
                             <div class="font-bold text-slate-900">Closing remarks</div>
                             <div class="text-xs text-slate-500 mt-1">Masashi Chiba (U. Tohoku)</div>
                         </div>
+                    </div>
+
                     </div>
 
 
